@@ -21,4 +21,13 @@ db.sequelize = sequelize;
 
 db.tutorials = require("./tutorial.model.js")(sequelize, Sequelize);
 
+// Automatically create tables
+// sequelize.sync()
+//   .then(() => {
+//     console.log('Database and tables have been created!');
+//   })
+//   .catch((error) => {
+//     console.error('Error creating database and tables:', error);
+//   });
+
 module.exports = db;
